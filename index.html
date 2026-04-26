@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0d">
+<title>Pack Mestre do Serralheiro - + de 1000 projetos prontos para copiar, fabricar e vender</title>
+<meta name="description" content="Pack Mestre do Serralheiro - + de 1000 projetos prontos de serralheria.">
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1932593253755926');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1932593253755926&ev=PageView&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --orange: #f5a623;
+  --orange-hover: #ffb733;
+  --orange-dim: rgba(245, 166, 35, 0.12);
+  --white: #ffffff;
+  --text: #e5e5e5;
+  --muted: #999;
+  --border: rgba(245, 166, 35, 0.25);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; min-width: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; width: 100%; }
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-weight: 500;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  padding-bottom: 80px;
+}
+img, video, iframe { max-width: 100%; display: block; height: auto; }
+a { color: inherit; text-decoration: none; }
+
+/* HEADER */
+.header {
+  position: sticky; top: 0;
+  background: rgba(13, 13, 13, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f1f1f;
+  z-index: 100; padding: 10px 16px;
+}
+.header-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+}
+.logo { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.logo-icon {
+  width: 32px; height: 32px; background: var(--orange);
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 4px; flex-shrink: 0;
+}
+.logo-icon svg { width: 18px; height: 18px; }
+.logo-text { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
+.logo-text .top { font-weight: 900; font-size: 13px; color: var(--white); letter-spacing: 0.3px; white-space: nowrap; }
+.logo-text .bottom { font-weight: 700; font-size: 8px; color: var(--muted); letter-spacing: 1px; margin-top: 2px; white-space: nowrap; }
+.btn-header {
+  background: var(--orange); color: #000; font-weight: 800;
+  padding: 9px 14px; border-radius: 6px; font-size: 11px;
+  letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+}
+.btn-header:active { background: var(--orange-hover); }
+
+/* CONTAINER */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 40px 0; }
+
+/* TIPOGRAFIA */
+h1, h2, h3, h4 { font-weight: 900; line-height: 1.2; color: var(--white); }
+h1, h2 { overflow-wrap: break-word; word-wrap: break-word; }
+
+/* HERO */
+.hero { padding: 28px 0 24px; text-align: center; }
+.hero h1 { font-size: 28px; line-height: 1.15; margin-bottom: 12px; letter-spacing: 0.5px; text-transform: uppercase; }
+.hero h2 { font-size: 18px; color: var(--orange); font-weight: 700; margin-bottom: 24px; line-height: 1.4; }
+.hero-image-wrap {
+  margin: 18px 0 26px; border-radius: 10px; overflow: hidden;
+  background: #111; aspect-ratio: 4/3;
+  display: flex; align-items: center; justify-content: center; border: 1px solid #222;
+}
+.hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+/* TAGLINE */
+.tagline { padding: 32px 0; text-align: center; }
+.tagline h2 { font-size: 22px; line-height: 1.3; font-weight: 800; color: var(--white); max-width: 880px; margin: 0 auto; }
+
+/* PROBLEMA */
+.problem-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.problem-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 22px 20px; }
+.problem-card h3 { color: var(--orange); font-size: 22px; margin-bottom: 14px; line-height: 1.25; }
+.problem-card .image-only { display: flex; align-items: center; justify-content: center; min-height: 220px; background: #0d0d0d; border-radius: 6px; overflow: hidden; }
+.problem-card .image-only img { width: 100%; height: 100%; object-fit: cover; }
+.problem-list { list-style: none; padding: 0; }
+.problem-list li { padding: 10px 0 10px 28px; position: relative; font-size: 14px; color: var(--text); border-bottom: 1px solid #2a2a2a; line-height: 1.5; }
+.problem-list li:last-child { border-bottom: none; }
+.problem-list li::before { content: "✗"; position: absolute; left: 0; top: 10px; color: var(--orange); font-weight: 900; font-size: 16px; }
+
+/* WHAT IS */
+.what { text-align: center; padding: 44px 0; border-top: 1px solid #1f1f1f; border-bottom: 1px solid #1f1f1f; }
+.what h2 { font-size: 22px; color: var(--orange); margin-bottom: 16px; line-height: 1.25; }
+.what p { font-size: 15px; max-width: 720px; margin: 0 auto 22px; line-height: 1.6; }
+.what .punch { font-size: 20px; font-weight: 900; color: var(--orange); max-width: 720px; margin: 22px auto 0; line-height: 1.3; }
+
+/* GALLERY */
+.gallery h2 { text-align: center; font-size: 22px; color: var(--orange); margin-bottom: 6px; line-height: 1.25; }
+.gallery-sub { text-align: center; color: var(--orange); margin-bottom: 24px; font-weight: 700; font-size: 15px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.gallery-item { aspect-ratio: 1; background: var(--bg-card); border: 1px solid #2a2a2a; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+/* TESTIMONIALS */
+.testimonials h2 { text-align: center; font-size: 22px; margin-bottom: 24px; color: var(--orange); line-height: 1.25; }
+.testimonial-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.testimonial { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 22px 20px; }
+.testimonial p { font-size: 14px; line-height: 1.65; margin-bottom: 14px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testimonial-avatar { width: 44px; height: 44px; border-radius: 50%; background: #2a2a2a; flex-shrink: 0; overflow: hidden; }
+.testimonial-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.testimonial-name { font-weight: 800; color: var(--white); font-size: 13px; margin-bottom: 3px; }
+.testimonial-stars { color: var(--orange); font-size: 14px; letter-spacing: 1px; }
+
+/* INSIDE */
+.inside h2 { text-align: center; font-size: 22px; color: var(--orange); margin-bottom: 22px; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.25; }
+.inside-cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.inside-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+.inside-card-icon { width: 44px; height: 44px; background: var(--orange-dim); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+.inside-card-icon svg { width: 22px; height: 22px; }
+.inside-card h4 { color: var(--orange); font-size: 13px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+.inside-card ul { list-style: none; padding: 0; }
+.inside-card ul li { font-size: 13px; color: var(--text); padding: 5px 0 5px 18px; position: relative; border-bottom: 1px solid #2a2a2a; line-height: 1.4; }
+.inside-card ul li:last-child { border-bottom: none; }
+.inside-card ul li::before { content: "→"; position: absolute; left: 0; color: var(--orange); font-weight: 700; font-size: 12px; }
+@media (min-width: 600px) { .inside-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .inside-cards { grid-template-columns: repeat(3, 1fr); } .inside-card h4 { font-size: 14px; } }
+
+/* INCLUDES */
+.includes h2 { text-align: center; font-size: 22px; margin-bottom: 6px; color: var(--orange); line-height: 1.25; }
+.includes h3 { text-align: center; font-size: 16px; font-weight: 700; margin-bottom: 22px; color: var(--white); }
+.includes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.include-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 12px; text-align: center; }
+.include-icon { width: 38px; height: 38px; margin: 0 auto 10px; background: var(--orange-dim); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.include-icon svg { width: 20px; height: 20px; }
+.include-item h4 { color: var(--white); font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.3; }
+
+/* BONUS */
+.bonus h2 { text-align: center; font-size: 22px; color: var(--orange); margin-bottom: 22px; line-height: 1.25; }
+.bonus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.bonus-item { aspect-ratio: 1; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.bonus-item img { width: 100%; height: 100%; object-fit: cover; }
+
+/* PLANS */
+.plans { padding: 40px 0; }
+.plans-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+.plan { background: var(--bg-card); border: 2px solid #2a2a2a; border-radius: 12px; padding: 26px 22px; position: relative; }
+.plan h2 { font-size: 22px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; color: var(--white); margin-bottom: 18px; text-align: center; }
+.plan-features { list-style: none; padding: 0; margin-bottom: 22px; }
+.plan-features li { padding: 10px 0 10px 26px; position: relative; font-size: 14px; color: var(--text); border-bottom: 1px solid #2a2a2a; line-height: 1.45; }
+.plan-features li:last-child { border-bottom: none; }
+.plan-features li::before { content: "✓"; position: absolute; left: 0; top: 10px; color: var(--orange); font-weight: 900; font-size: 14px; }
+.plan-price-label { text-align: center; font-size: 14px; color: var(--text); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 4px; }
+.plan-price-big { font-size: 48px; font-weight: 900; letter-spacing: -2px; line-height: 1; margin-bottom: 22px; text-align: center; color: var(--white); }
+.plan-price-big small { font-size: 22px; font-weight: 700; }
+.plan-cta { display: block; width: 100%; background: #2a2a2a; color: var(--white); border: 2px solid #444; font-weight: 800; padding: 16px; border-radius: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; text-align: center; min-height: 52px; }
+.plan-cta:active { background: #333; }
+.plan-microcopy { text-align: center; margin-top: 12px; font-size: 13px; color: var(--muted); line-height: 1.4; }
+.plan-secure { text-align: center; margin-top: 8px; font-size: 11px; color: var(--muted); }
+.plan-divider { text-align: center; margin: 8px 0; font-size: 14px; color: var(--orange); font-weight: 800; line-height: 1.4; }
+
+/* PREMIUM */
+.plan-premium { background: linear-gradient(180deg, var(--bg-card) 0%, #1f1a10 100%); border-color: var(--orange); box-shadow: 0 0 32px rgba(245, 166, 35, 0.08); }
+.plan-premium .plan-price-big { color: var(--orange); }
+.plan-premium .plan-cta { background: var(--orange); color: #000; border-color: var(--orange); }
+.plan-premium .plan-cta:active { background: var(--orange-hover); }
+
+/* GUARANTEE */
+.guarantee { background: var(--bg-card); border-top: 2px solid var(--orange); border-bottom: 2px solid var(--orange); padding: 40px 20px; text-align: center; }
+.guarantee-badge { width: 80px; height: 80px; margin: 0 auto 18px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.guarantee-badge svg { width: 44px; height: 44px; }
+.guarantee h2 { font-size: 22px; color: var(--orange); margin-bottom: 14px; line-height: 1.25; }
+.guarantee p { font-size: 15px; max-width: 580px; margin: 0 auto 12px; line-height: 1.6; }
+.guarantee strong { color: var(--white); display: block; margin-top: 16px; font-size: 16px; line-height: 1.4; }
+
+/* LIFETIME */
+.lifetime { text-align: center; padding: 36px 0; }
+.lifetime h2 { font-size: 22px; color: var(--orange); line-height: 1.3; max-width: 720px; margin: 0 auto; }
+
+/* FOOTER */
+footer { background: #0a0a0a; border-top: 1px solid #1f1f1f; padding: 28px 20px; text-align: center; margin-top: 24px; }
+footer p { color: var(--muted); font-size: 11px; margin-bottom: 8px; line-height: 1.6; }
+footer a { color: var(--muted); text-decoration: underline; }
+footer .legal { margin-top: 14px; max-width: 720px; margin-left: auto; margin-right: auto; font-size: 10px; color: #666; }
+
+/* STICKY CTA MOBILE */
+.sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(13, 13, 13, 0.98); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--border); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); z-index: 99; box-shadow: 0 -4px 20px rgba(0,0,0,0.5); }
+.sticky-cta-btn { display: block; width: 100%; background: var(--orange); color: #000; font-weight: 900; font-size: 15px; padding: 16px 12px; border-radius: 8px; border: none; text-align: center; letter-spacing: 0.5px; text-transform: uppercase; min-height: 52px; box-shadow: 0 4px 14px rgba(245, 166, 35, 0.3); }
+.sticky-cta-btn:active { background: var(--orange-hover); }
+
+/* TABLET */
+@media (min-width: 600px) {
+  body { padding-bottom: 0; }
+  .container { padding: 0 24px; }
+  .section { padding: 56px 0; }
+  .hero h1 { font-size: 36px; }
+  .hero h2 { font-size: 22px; }
+  .tagline h2 { font-size: 28px; }
+  .gallery-grid, .inside-grid, .bonus-grid { grid-template-columns: repeat(3, 1fr); }
+  .includes-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .sticky-cta { display: none; }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  body { font-size: 16px; }
+  .section { padding: 72px 0; }
+  .hero { padding: 56px 0 32px; }
+  .hero h1 { font-size: 48px; letter-spacing: 1px; }
+  .hero h2 { font-size: 26px; }
+  .hero-image-wrap { aspect-ratio: 16/9; }
+  .tagline h2 { font-size: 34px; }
+  .problem-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .problem-card h3 { font-size: 26px; }
+  .what h2 { font-size: 32px; }
+  .what p { font-size: 17px; }
+  .what .punch { font-size: 26px; }
+  .gallery h2, .testimonials h2, .inside h2, .includes h2, .bonus h2, .guarantee h2, .lifetime h2 { font-size: 32px; }
+  .gallery-grid, .inside-grid, .bonus-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+  .includes-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .include-item { padding: 24px 16px; }
+  .plans-grid { grid-template-columns: 1fr 1fr; align-items: start; gap: 28px; }
+  .plan-divider { grid-column: 1 / -1; margin: 0; }
+  .plan { padding: 32px 28px; }
+  .plan h2 { font-size: 26px; }
+  .plan-price-big { font-size: 60px; }
+  .guarantee { padding: 64px 20px; }
+  .header { padding: 14px 20px; }
+  .logo-text .top { font-size: 16px; }
+  .btn-header { padding: 11px 20px; font-size: 13px; }
+}
+
+::selection { background: var(--orange); color: #000; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="top">PACK MESTRE</span>
+        <span class="bottom">DO SERRALHEIRO</span>
+      </div>
+    </a>
+    <a href="#planos" class="btn-header">COMPRAR AGORA</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="container hero">
+  <h1>PACK MESTRE DO SERRALHEIRO</h1>
+  <h2>+ de 1000 projetos prontos de serralheria para copiar, fabricar e vender</h2>
+  <div class="hero-image-wrap">
+    <img src="img/hero-mockup.jpg" alt="Pack Mestre do Serralheiro - mais de 1000 projetos prontos">
+  </div>
+</section>
+
+<!-- TAGLINE -->
+<section class="container tagline">
+  <h2>Não é curso. São projetos testados que você só precisa seguir para ganhar dinheiro na serralheria, mesmo com poucas ferramentas.</h2>
+</section>
+
+<!-- PROBLEMA -->
+<section class="container section">
+  <div class="problem-grid">
+    <div class="problem-card">
+      <h3>Você passa por alguma dessas situações?</h3>
+      <ul class="problem-list">
+        <li>Aparece serviço novo e você não sabe quanto cobrar</li>
+        <li>O cliente pede um modelo diferente e você perde a venda</li>
+        <li>Sabe soldar, mas não sabe quanto material gastar</li>
+        <li>Quer começar na serralheria e trava sem saber por onde</li>
+        <li>Vê outros fechando 4-5 serviços e o seu WhatsApp não toca</li>
+        <li>Cliente pede pra ver "modelo" e você procura no Google na frente dele</li>
+      </ul>
+    </div>
+
+    <div class="problem-card">
+      <h3>O problema não é falta de serviço. É falta de projeto certo na mão.</h3>
+      <p style="color: var(--text); font-size: 14px; line-height: 1.7; margin-top: 12px;">A serralheria não tá morrendo. Tá morrendo o serralheiro que ainda tenta improvisar tudo de cabeça.</p>
+      <p style="color: var(--text); font-size: 14px; line-height: 1.7; margin-top: 12px;">Enquanto você fica patinando, outro cara da sua cidade — talvez com menos experiência — tá fechando o serviço que era seu. Não porque é melhor. É porque chega no cliente com projeto pronto.</p>
+      <p style="color: var(--orange); font-weight: 800; margin-top: 16px; font-size: 15px;">Você fica vendo o trator do outro passar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS -->
+<section class="what">
+  <div class="container">
+    <h2>O que é o Pack Mestre do Serralheiro?</h2>
+    <p>É um pacote completo com <strong style="color: var(--white)">+1.000 projetos de serralheria prontos</strong>, organizados por categoria, com medidas, material, custo e preço de venda.</p>
+    <p class="punch">Você não aprende teoria. Você copia o projeto, fabrica e vende.</p>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="container section gallery">
+  <h2>Alguns modelos dos projetos</h2>
+  <p class="gallery-sub">Lembrando são mais de 1000</p>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="img/g1-kart.jpg" alt="Projeto de kart"></div>
+    <div class="gallery-item"><img src="img/g2-flatdeck.jpg" alt="Projeto reboque flatdeck"></div>
+    <div class="gallery-item"><img src="img/g3-sofa.png" alt="Projeto sofá industrial"></div>
+    <div class="gallery-item"><img src="img/g4-poltrona.png" alt="Projeto poltrona industrial"></div>
+    <div class="gallery-item"><img src="img/g5-single-axle.png" alt="Projeto single axle trailer"></div>
+    <div class="gallery-item"><img src="img/g6-stock-trailer.png" alt="Projeto stock trailer"></div>
+    <div class="gallery-item"><img src="img/g7-superkart.png" alt="Projeto super kart"></div>
+    <div class="gallery-item"><img src="img/g8-armario.png" alt="Projeto armário de banheiro"></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="container section testimonials">
+  <h2>Alguns Depoimentos: de quem já comprou</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>"Esse Pack Mestre vale muito mais do que eu paguei. Já peguei dois serviços só usando os projetos de portão. As medidas batem certinho, não tem enrolação. É só seguir e fazer."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"><img src="img/avatar-1.jpg" alt="João Carlos"></div>
+        <div>
+          <div class="testimonial-name">João Carlos — MG</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p>"Sou serralheiro há anos e mesmo assim me surpreendi. Tem projeto que eu nunca tinha feito, como carretinha e móvel industrial. Já usei, já vendi e funcionou."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"><img src="img/avatar-2.jpg" alt="Marcos Vinícius"></div>
+        <div>
+          <div class="testimonial-name">Marcos Vinícius — SP</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p>"Eu tava parado, sem serviço. Comprei o pack e consegui fechar um portão e uma grade na mesma semana. Muito bem organizado, fácil de entender até no celular."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"><img src="img/avatar-3.jpg" alt="Rafael Nogueira"></div>
+        <div>
+          <div class="testimonial-name">Rafael Nogueira — PR</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE TEM DENTRO -->
+<section class="container section inside">
+  <h2>O QUE VEM DENTRO DO PACK</h2>
+  <div class="inside-cards">
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="7" height="18" rx="1"/><rect x="15" y="3" width="7" height="18" rx="1"/></svg>
+      </div>
+      <h4>PORTÕES</h4>
+      <ul>
+        <li>Portão de correr (simples e reforçado)</li>
+        <li>Portão basculante tradicional e reforçado</li>
+        <li>Portão social simples e moderno</li>
+        <li>Portão duas folhas</li>
+        <li>Portão vazado, fechado e ripado</li>
+        <li>Portão residencial e industrial</li>
+      </ul>
+    </div>
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M2 10h20M7 10V6a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4"/><path d="M2 14l2-4h16l2 4"/></svg>
+      </div>
+      <h4>CARRETINHAS E REBOQUES</h4>
+      <ul>
+        <li>Carretinha 1 eixo 750kg e 1500kg</li>
+        <li>Reboque 2 eixos 3600x2000</li>
+        <li>Reboque tipo gaiola</li>
+        <li>Carretinha de madeira</li>
+        <li>Plataformas e carretas</li>
+      </ul>
+    </div>
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9" y1="14.5" x2="15" y2="14.5"/></svg>
+      </div>
+      <h4>MÓVEIS INDUSTRIAIS</h4>
+      <ul>
+        <li>Mesas industriais e bancadas</li>
+        <li>Prateleiras e racks metálicos</li>
+        <li>Armários e gaveteiros</li>
+        <li>Suportes e gancheiras</li>
+        <li>Balcões e estruturas comerciais</li>
+      </ul>
+    </div>
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      </div>
+      <h4>ACADEMIA</h4>
+      <ul>
+        <li>Supino reto, inclinado e declinado</li>
+        <li>Leg press 45º e agachamento</li>
+        <li>Polia alta, baixa e dupla</li>
+        <li>Banco de desenvolvimento</li>
+        <li>Esteira, bicicleta e abdutor</li>
+      </ul>
+    </div>
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h4>GALPÕES E ESTRUTURAS</h4>
+      <ul>
+        <li>Galpões metálicos completos</li>
+        <li>Mezaninos e estruturas industriais</li>
+        <li>Escadas, corrimão e guarda-corpo</li>
+        <li>Coberturas e telhados metálicos</li>
+        <li>Estruturas rápidas para obra</li>
+      </ul>
+    </div>
+
+    <div class="inside-card">
+      <div class="inside-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      </div>
+      <h4>EXTRAS</h4>
+      <ul>
+        <li>Projetos de kart e automotivos</li>
+        <li>Churrasqueiras clássicas e premium</li>
+        <li>65 projetos com pallets</li>
+        <li>Santo antônio e bagageiros</li>
+        <li>Aparelhos fitness caseiros</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- INCLUDES -->
+<section class="container section includes">
+  <h2>Cada projeto inclui:</h2>
+  <h3>Tudo que você precisa para fabricar e vender</h3>
+  <div class="includes-grid">
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <h4>Medidas exatas</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+      <h4>Lista de material</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"/></svg></div>
+      <h4>Esquema de corte</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <h4>Dicas de montagem</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <h4>Custo médio</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+      <h4>Preço médio de venda</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+      <h4>Lucro estimado</h4>
+    </div>
+    <div class="include-item">
+      <div class="include-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <h4>Acesso vitalício</h4>
+    </div>
+  </div>
+</section>
+
+
+<!-- PLANOS -->
+<section id="planos" class="container plans">
+  <div class="plans-grid">
+
+    <!-- PLANO BÁSICO -->
+    <div class="plan">
+      <h2>PLANO BÁSICO</h2>
+      <ul class="plan-features">
+        <li>500 projetos de serralheria</li>
+        <li>Planilha automática de precificação</li>
+        <li>Lista de fornecedores</li>
+        <li>Guia: quanto cobrar sem perder serviço</li>
+        <li>Acesso vitalício</li>
+      </ul>
+      <div class="plan-price-label">POR APENAS</div>
+      <div class="plan-price-big"><small>R$</small>10<small>,00</small></div>
+      <a href="https://pay.kiwify.com.br/ybCLeIR" class="plan-cta" target="_blank">QUERO ACESSO IMEDIATO</a>
+      <p class="plan-microcopy">Acesso imediato pelo WhatsApp ou e-mail</p>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="plan-divider">👇🏻 ⚠️ plano mais vendido ⚠️ 👇🏻</div>
+
+    <!-- PLANO PREMIUM -->
+    <div class="plan plan-premium">
+      <h2>PLANO PREMIUM</h2>
+      <ul class="plan-features">
+        <li>+ de 1000 projetos</li>
+        <li>Planilha automática de precificação</li>
+        <li>Lista de fornecedores</li>
+        <li>Guia: quanto cobrar sem perder serviço</li>
+        <li>Projetos mais pedidos em cidades pequenas</li>
+        <li>300 Projetos de portões</li>
+        <li>100 Projetos de carretinhas</li>
+        <li>100 Projetos de reboques</li>
+        <li>100 Projetos de carretas/plataformas</li>
+        <li>100 Projetos automotivos</li>
+        <li>600 projetos de móveis industriais</li>
+        <li>500 projetos de Estruturas rápidas</li>
+        <li>50 projetos de churrasqueiras</li>
+        <li>100 projetos de aparelho de academia</li>
+        <li>Certificado</li>
+        <li>Acesso vitalício</li>
+      </ul>
+      <div class="plan-price-label">POR APENAS</div>
+      <div class="plan-price-big"><small>R$</small>27<small>,00</small></div>
+      <a href="https://pay.kiwify.com.br/GqRpj39" class="plan-cta" target="_blank">QUERO ACESSO IMEDIATO</a>
+      <p class="plan-microcopy">Acesso imediato pelo WhatsApp ou e-mail</p>
+      <p class="plan-secure">🔒 Pagamento 100% seguro · Acesso instantâneo após aprovação</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIFETIME -->
+<section class="container lifetime">
+  <h2>Projeto para a vida toda. Lembrando são mais de 1000 projetos!</h2>
+</section>
+
+<!-- GARANTIA -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+    </div>
+    <h2>🛡 Garantia incondicional de 7 dias.<br>Se não gostar, devolvemos seu dinheiro</h2>
+    <p>Testou e não gostou? Devolvemos seu dinheiro sem burocracia! Você tem 7 dias para experimentar e, se não for pra você, basta pedir o reembolso.</p>
+    <strong>Sem riscos. Sem enrolação. Só resultados.</strong>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Vinicius Enrico · Todos os direitos reservados</p>
+  <p><a href="#">Termos</a> · <a href="#">Privacidade</a> · <a href="#">Suporte</a></p>
+  <p class="legal">Este site não é parte do site do Facebook ou Facebook Inc. Adicionalmente, este site não é endossado pelo Facebook de nenhuma forma. Facebook é uma marca registrada da Facebook Inc.</p>
+</footer>
+
+<!-- STICKY CTA - SÓ NO MOBILE -->
+<div class="sticky-cta">
+  <a href="#planos" class="sticky-cta-btn">QUERO ACESSAR AGORA</a>
+</div>
+
+<script>
+const stickyCTA = document.querySelector('.sticky-cta');
+const planos = document.getElementById('planos');
+if (stickyCTA && planos && 'IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      stickyCTA.style.opacity = entry.isIntersecting ? '0' : '1';
+      stickyCTA.style.pointerEvents = entry.isIntersecting ? 'none' : 'auto';
+      stickyCTA.style.transition = 'opacity 0.3s';
+    });
+  }, { threshold: 0.3 });
+  observer.observe(planos);
+}
+
+document.querySelectorAll('.plan-cta, .btn-header, .sticky-cta-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout');
+  });
+});
+</script>
+
+</body>
+</html>
