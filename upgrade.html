@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0d">
+<title>Espera! Você Ganhou uma Condição Especial</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1932593253755926');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1932593253755926&ev=PageView&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --orange: #f5a623;
+  --orange-hover: #ffb733;
+  --white: #ffffff;
+  --text: #e5e5e5;
+  --muted: #999;
+  --green: #00c853;
+  --green-hover: #00e676;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-weight: 500;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* BANNER TOPO */
+.top-banner {
+  background: var(--orange);
+  color: #000;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  animation: pulse-banner 2s infinite;
+}
+@keyframes pulse-banner {
+  0%, 100% { background: var(--orange); }
+  50% { background: var(--orange-hover); }
+}
+
+/* CONTAINER */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  text-align: center;
+}
+
+/* HEADLINE */
+.headline {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.headline span {
+  color: var(--orange);
+}
+.subheadline {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.subheadline strong {
+  color: var(--white);
+}
+
+/* SEPARADOR */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(245, 166, 35, 0.2);
+  margin: 0 0 28px;
+}
+
+/* CARD DE OFERTA */
+.offer-card {
+  background: var(--bg-card);
+  border: 2px solid var(--orange);
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.offer-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), #ffb733, var(--orange));
+}
+
+.badge-special {
+  display: inline-block;
+  background: var(--orange);
+  color: #000;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.offer-title {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.offer-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* COMPARAÇÃO DE ITENS */
+.items-compare {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.items-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+  color: var(--text);
+}
+.item-row:last-child { border-bottom: none; }
+.item-check {
+  color: var(--green);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.item-new {
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(245,166,35,0.12);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* PREÇO */
+.price-block {
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.price-normal {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.price-riscado {
+  font-size: 18px;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-bottom: 6px;
+}
+.price-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+.price-big {
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--green);
+  line-height: 1;
+}
+.price-big small {
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: super;
+  margin-right: 2px;
+}
+.price-big .cents {
+  font-size: 28px;
+  font-weight: 700;
+  vertical-align: super;
+}
+.price-economia {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--green);
+  color: #000;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+/* BOTÃO SIM */
+.btn-yes {
+  display: block;
+  width: 100%;
+  background: var(--green);
+  color: #000;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: background 0.2s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-yes:active {
+  background: var(--green-hover);
+  transform: scale(0.98);
+}
+.btn-yes-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* BOTÃO NÃO */
+.btn-no {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-no:active {
+  border-color: rgba(255,255,255,0.25);
+  color: var(--text);
+}
+
+/* GARANTIA */
+.garantia {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.garantia-icon {
+  font-size: 28px;
+}
+
+@media (max-width: 360px) {
+  .headline { font-size: 22px; }
+  .price-big { font-size: 48px; }
+}
+</style>
+</head>
+<body>
+
+<!-- BANNER TOPO -->
+<div class="top-banner">🎁 ESPERA! VOCÊ GANHOU UMA CONDIÇÃO ESPECIAL</div>
+
+<div class="container">
+
+  <!-- HEADLINE -->
+  <h1 class="headline">Você escolheu o básico,<br>mas pode levar o <span>Premium</span><br>por quase o mesmo preço</h1>
+  <p class="subheadline">Por ser um cliente novo, liberamos o <strong>Plano Premium completo</strong> por um valor que nunca mais vai aparecer.</p>
+
+  <hr class="divider">
+
+  <!-- CARD OFERTA -->
+  <div class="offer-card">
+
+    <div class="badge-special">⚡ Oferta exclusiva — só agora</div>
+
+    <div class="offer-title">Pack Mestre do Serralheiro</div>
+    <div class="offer-subtitle">Plano Premium Completo</div>
+
+    <!-- ITENS -->
+    <div class="items-compare">
+      <div class="items-label">O que você leva:</div>
+      <div class="item-row"><span class="item-check">✓</span> +1.000 projetos de serralheria</div>
+      <div class="item-row"><span class="item-check">✓</span> 300 Projetos de portões <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> 100 Projetos de carretinhas <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> 100 Projetos de reboques <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> 600 Projetos de móveis industriais <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> 500 Projetos de estruturas rápidas <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> Planilha automática de precificação</div>
+      <div class="item-row"><span class="item-check">✓</span> Lista de fornecedores</div>
+      <div class="item-row"><span class="item-check">✓</span> Projetos mais pedidos em cidades pequenas <span class="item-new">+extra</span></div>
+      <div class="item-row"><span class="item-check">✓</span> Certificado + Acesso vitalício</div>
+    </div>
+
+    <!-- PREÇO -->
+    <div class="price-block">
+      <div class="price-normal">Preço Normal:</div>
+      <div class="price-riscado">R$ 27,00</div>
+      <div class="price-label">Sua condição especial:</div>
+      <div class="price-big"><small>R$</small>18<span class="cents">,90</span></div>
+      <div class="price-economia">ECONOMIZE R$ 8,10 AGORA</div>
+    </div>
+
+    <!-- CTA SIM -->
+    <a href="https://pay.kiwify.com.br/UX8AE9T" class="btn-yes" id="btn-upgrade">
+      ✅ SIM! QUERO O PREMIUM POR R$ 18,90
+    </a>
+    <p class="btn-yes-sub">🔒 Pagamento 100% seguro · Acesso imediato</p>
+
+    <!-- CTA NÃO -->
+    <a href="https://pay.kiwify.com.br/ybCLeIR" class="btn-no" id="btn-basic">
+      Não, prefiro continuar com o básico de R$ 10,00
+    </a>
+
+  </div>
+
+  <!-- GARANTIA -->
+  <div class="garantia">
+    <span class="garantia-icon">🛡</span>
+    <span>Garantia incondicional de 7 dias. Não gostou, devolvemos seu dinheiro.</span>
+  </div>
+
+</div>
+
+<script>
+// Rastreia clique no upgrade
+document.getElementById('btn-upgrade').addEventListener('click', function() {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'InitiateCheckout', { value: 18.90, currency: 'BRL' });
+  }
+});
+
+// Rastreia clique no básico
+document.getElementById('btn-basic').addEventListener('click', function() {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'InitiateCheckout', { value: 10.00, currency: 'BRL' });
+  }
+});
+</script>
+
+</body>
+</html>
