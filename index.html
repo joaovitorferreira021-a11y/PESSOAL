@@ -263,92 +263,6 @@ footer .legal { margin-top: 14px; max-width: 720px; margin-left: auto; margin-ri
 }
 
 ::selection { background: var(--orange); color: #000; }
-
-/* ─── EXIT POPUP ─── */
-.exit-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 999;
-  align-items: flex-end;
-  justify-content: center;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.exit-overlay.active { display: flex; animation: fadeOverlay 0.3s ease; }
-@keyframes fadeOverlay { from { opacity: 0; } to { opacity: 1; } }
-.exit-popup {
-  background: var(--bg-card);
-  border: 2px solid var(--orange);
-  border-radius: 20px 20px 0 0;
-  padding: 28px 20px 40px;
-  width: 100%;
-  max-width: 480px;
-  text-align: center;
-  position: relative;
-  animation: slideUp 0.35s ease;
-}
-@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-.exit-popup::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--orange), #ffb733, var(--orange));
-  border-radius: 20px 20px 0 0;
-}
-.exit-close {
-  position: absolute;
-  top: 14px; right: 16px;
-  background: rgba(255,255,255,0.08);
-  border: none; color: var(--muted);
-  font-size: 18px; width: 32px; height: 32px;
-  border-radius: 50%; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  -webkit-tap-highlight-color: transparent;
-}
-.exit-badge {
-  display: inline-block;
-  background: var(--orange); color: #000;
-  font-size: 11px; font-weight: 900;
-  letter-spacing: 1px; text-transform: uppercase;
-  padding: 5px 14px; border-radius: 20px;
-  margin-bottom: 14px;
-}
-.exit-headline {
-  font-size: 22px; font-weight: 900;
-  color: var(--white); line-height: 1.2;
-  text-transform: uppercase; margin-bottom: 8px;
-}
-.exit-headline span { color: var(--orange); }
-.exit-sub { font-size: 13px; color: var(--text); line-height: 1.6; margin-bottom: 20px; }
-.exit-price-block { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; margin-bottom: 18px; }
-.exit-price-normal { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
-.exit-price-riscado { font-size: 16px; color: var(--muted); text-decoration: line-through; margin-bottom: 4px; }
-.exit-price-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); margin-bottom: 4px; }
-.exit-price-big { font-size: 48px; font-weight: 900; color: #00c853; line-height: 1; }
-.exit-price-big small { font-size: 18px; font-weight: 700; vertical-align: super; margin-right: 2px; }
-.exit-price-big .cents { font-size: 24px; font-weight: 700; vertical-align: super; }
-.exit-btn-yes {
-  display: block; width: 100%;
-  background: #00c853; color: #000;
-  font-size: 15px; font-weight: 900;
-  text-transform: uppercase; letter-spacing: 0.5px;
-  padding: 18px; border-radius: 10px;
-  text-decoration: none; margin-bottom: 10px;
-  -webkit-tap-highlight-color: transparent;
-  transition: background 0.2s;
-}
-.exit-btn-yes:active { background: #00e676; }
-.exit-btn-no {
-  display: block; width: 100%;
-  background: transparent; color: var(--muted);
-  font-size: 12px; font-weight: 600;
-  padding: 12px; border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px; text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
 </style>
 </head>
 <body>
@@ -704,14 +618,6 @@ if (stickyCTA && planos && 'IntersectionObserver' in window) {
   }, { threshold: 0.3 });
   observer.observe(planos);
 }
-
-// ─── INTERCEPTA BOTÃO VOLTAR → redireciona pra exit.html ───
-(function() {
-  history.pushState(null, '', location.href);
-  window.addEventListener('popstate', function() {
-    window.location.replace('exit.html');
-  });
-})();
 
 document.querySelectorAll('.plan-cta, .btn-header, .sticky-cta-btn').forEach(btn => {
   btn.addEventListener('click', () => {
