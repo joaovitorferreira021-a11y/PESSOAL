@@ -686,28 +686,6 @@ footer .legal { margin-top: 14px; max-width: 720px; margin-left: auto; margin-ri
   <p class="legal">Este site não é parte do site do Facebook ou Facebook Inc. Adicionalmente, este site não é endossado pelo Facebook de nenhuma forma. Facebook é uma marca registrada da Facebook Inc.</p>
 </footer>
 
-<!-- EXIT POPUP -->
-<div class="exit-overlay" id="exit-overlay">
-  <div class="exit-popup">
-    <button class="exit-close" id="exit-close">✕</button>
-    <div class="exit-badge">🎁 Oferta especial — só agora</div>
-    <h2 class="exit-headline">Espera! Antes de ir,<br>leva o <span>Premium</span><br>por quase nada</h2>
-    <p class="exit-sub">Por ser sua primeira visita, liberamos o Plano Premium completo com mais de 1.000 projetos por um valor que não vai se repetir.</p>
-    <div class="exit-price-block">
-      <div class="exit-price-normal">Preço Normal:</div>
-      <div class="exit-price-riscado">R$ 27,00</div>
-      <div class="exit-price-label">Hoje por apenas:</div>
-      <div class="exit-price-big"><small>R$</small>18<span class="cents">,90</span></div>
-    </div>
-    <a href="https://pay.kiwify.com.br/UX8AE9T" class="exit-btn-yes" id="exit-btn-yes">
-      ✅ QUERO O PREMIUM POR R$ 18,90
-    </a>
-    <a href="#planos" class="exit-btn-no" id="exit-btn-no">
-      Não, prefiro continuar vendo a página
-    </a>
-  </div>
-</div>
-
 <!-- STICKY CTA - SÓ NO MOBILE -->
 <div class="sticky-cta">
   <a href="#planos" class="sticky-cta-btn">QUERO ACESSAR AGORA</a>
@@ -727,35 +705,11 @@ if (stickyCTA && planos && 'IntersectionObserver' in window) {
   observer.observe(planos);
 }
 
-// ─── EXIT INTENT — visibilitychange apenas ───
+// ─── INTERCEPTA BOTÃO VOLTAR → redireciona pra exit.html ───
 (function() {
-  var shown = false;
-  var overlay = document.getElementById('exit-overlay');
-
-  function showPopup() {
-    if (shown) return;
-    shown = true;
-    overlay.classList.add('active');
-  }
-
-  document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'hidden') showPopup();
-  });
-
-  document.getElementById('exit-close').addEventListener('click', function() {
-    overlay.classList.remove('active');
-  });
-
-  document.getElementById('exit-btn-no').addEventListener('click', function() {
-    overlay.classList.remove('active');
-  });
-
-  document.getElementById('exit-btn-yes').addEventListener('click', function() {
-    if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { value: 18.90, currency: 'BRL' });
-  });
-
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) overlay.classList.remove('active');
+  history.pushState(null, '', location.href);
+  window.addEventListener('popstate', function() {
+    window.location.replace('exit.html');
   });
 })();
 
