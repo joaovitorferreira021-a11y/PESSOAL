@@ -358,15 +358,15 @@ body {
     <!-- PREÇO -->
     <div class="price-block">
       <div class="price-normal">Preço Normal:</div>
-      <div class="price-riscado">R$ 36,90</div>
+      <div class="price-riscado">R$ 27,00</div>
       <div class="price-label">Sua condição especial:</div>
-      <div class="price-big"><small>R$</small>25<span class="cents">,90</span></div>
+      <div class="price-big"><small>R$</small>18<span class="cents">,90</span></div>
       <div class="price-economia">ECONOMIZE R$ 11,00 AGORA</div>
     </div>
 
     <!-- CTA SIM -->
     <a href="https://pay.kiwify.com.br/UX8AE9T" class="btn-yes" id="btn-upgrade">
-      ✅ SIM! QUERO O PREMIUM POR R$ 25,90
+      ✅ SIM! QUERO O PREMIUM POR R$ 18,90
     </a>
     <p class="btn-yes-sub">🔒 Pagamento 100% seguro · Acesso imediato</p>
 
@@ -389,7 +389,7 @@ body {
 // Rastreia clique no upgrade
 document.getElementById('btn-upgrade').addEventListener('click', function() {
   if (typeof fbq !== 'undefined') {
-    fbq('track', 'InitiateCheckout', { value: 25.90, currency: 'BRL' });
+    fbq('track', 'InitiateCheckout', { value: 18.90, currency: 'BRL' });
   }
 });
 
